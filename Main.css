@@ -463,7 +463,8 @@ p.recommended{
 
 @media only screen and (max-width: 600px){
     .wrapper{
-        display: contents;
+        display: block;
+        max-width: 600px
     }
     .undertop{
         display: block;
@@ -480,7 +481,7 @@ p.recommended{
     img.coll-menu{
         display: block;
         top: 44px;
-        left: 74.5%;
+        left: 100%;
     }
     img.login{
         left: 83%;
