@@ -480,10 +480,10 @@ p.recommended{
     img.coll-menu{
         display: block;
         top: 44px;
-        left: 74%;
+        left: 74.5%;
     }
     img.login{
-        left: 79.2%;
+        left: 83%;
         top: 10px
     }
     img.search-lense{
@@ -500,9 +500,14 @@ p.recommended{
     input.search-bar{
         height: 40px;
     }
+    .home-wrap{
+        transform: translateX(50%);
+        left: auto;
+        width: 100%;
+    }
     .home-mainBg{
         width: 130%;
-        left: 65.5%;
+        left: 68%;
         transform: translateX(-50%);
         top: 20%;
     }
@@ -510,16 +515,12 @@ p.recommended{
         width: 94.5%;
     }
     .home-title p{
+        font-size: 10rem;
         left: 50%;
         transform: translate(-50%, 0%);
     }
     p.top{
         display: none;
-    }
-    .home-wrap{
-        transform: translateX(50%);
-        left: auto;
-        width: 100%;
     }
 }
 
