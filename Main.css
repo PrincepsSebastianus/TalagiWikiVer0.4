@@ -281,6 +281,20 @@ img.login{
     align-items: center;
     z-index: 8;
 }
+.side-contentBgImg{
+    position: fixed;
+    background-color: var(--standard-bgcolor);
+    left: 180px;
+    top: 21%;
+    padding: 12px;
+    width: 31%;
+    height: 34%;
+    border-radius: 30px;
+    margin: 6px 20px 6px 20px;
+    display: inline-flex;
+    align-items: center;
+    z-index: 8;
+}
 .side-content{
     background-color: var(--standard-button-color);
     position: fixed;
@@ -294,7 +308,7 @@ img.login{
     z-index: 10;
    
 }
-.side-contentBg img{
+.side-contentBgImg img{
     max-width: 580px;
     max-height: 320px;
     border-radius: 30px;
@@ -445,7 +459,7 @@ p.recommended{
 .recommend-wrap p{
     position: relative;
     bottom: 12px;
-    color: black;
+    color: var(--title-color);
     font-weight: bold;
     font-size: 18px;
 }
@@ -542,9 +556,64 @@ p.recommended{
         align-items: normal;
     }
     .home-arg:hover{
-        width: 170px;
-        height: 110px;
+        width: 180px;
+        height: 120px;
     }
+    .side-contentBg{
+        display: none;
+    }
+    .side-contentBgImg{
+        width: 90%;
+        height: 280px;
+        margin: 0px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 160px;
+    }
+    .side-contentBgImg img{
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .main-contentBg{
+        position: absolute;
+        width: 96%;
+        height: 600px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 560px;
+        padding: 5px;
+        margin: 0px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .main-content{
+        width: 96%;
+        height: 600px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 7px;
+        margin: 0px;
+        border-radius: 20px 20px 0px 0px;
+    }
+    p.title{
+        left: 50%;
+        transform: translate(-50%, 0%);
+        top: 390px;
+        font-size: 5rem;
+    }
+    .recommend{
+        width: 300px;
+        left: 50%;
+        transform: translate(-60%, 0%);
+    }
+    .recommend-wrap{
+        width: 90%;
+    }
+
 }
 
 @media (min-width: 601px){
