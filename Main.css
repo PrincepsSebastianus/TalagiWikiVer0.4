@@ -463,7 +463,7 @@ p.recommended{
 
 @media only screen and (max-width: 600px){
     .wrapper{
-        display: block;
+        display: contents;
     }
     .undertop{
         display: block;
