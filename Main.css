@@ -480,10 +480,10 @@ p.recommended{
     img.coll-menu{
         display: block;
         top: 44px;
-        left: 74.5%;
+        left: 74%;
     }
     img.login{
-        left: 83%;
+        left: 79.2%;
         top: 10px
     }
     img.search-lense{
@@ -500,17 +500,26 @@ p.recommended{
     input.search-bar{
         height: 40px;
     }
+    .home-mainBg{
+        width: 130%;
+        left: 65.5%;
+        transform: translateX(-50%);
+        top: 20%;
+    }
+    .home-title{
+        width: 94.5%;
+    }
+    .home-title p{
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    p.top{
+        display: none;
+    }
     .home-wrap{
         transform: translateX(50%);
         left: auto;
         width: 100%;
-    }
-    .home-mainBg{
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    p.top{
-        display: none;
     }
 }
 
