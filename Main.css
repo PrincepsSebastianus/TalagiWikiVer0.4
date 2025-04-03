@@ -147,7 +147,7 @@ a{
 /* Top */
 
 .undertop{
-    display: none;
+    display: block;
     position: fixed;
     left: 0px;
     top: 0px;
@@ -524,7 +524,7 @@ p.recommended{
         display: block;
         left: auto;
         margin: 0px;
-        width: 100%;
+        width: 96%;
         top: 480px;
     }
     .home-bg{
@@ -553,7 +553,9 @@ p.recommended{
 @media (min-width: 992px) and (orientation: lanscape){
 
 }
-@media (min-width: 1200px) and (orientation: lanscape){
-
+@media (min-width: 1200px){
+    .undertop{
+        display: none;
+    }
 }
 
