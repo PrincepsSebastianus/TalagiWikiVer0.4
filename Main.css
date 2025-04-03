@@ -33,6 +33,9 @@ body.dark-mode img.search-lense{
 body.dark-mode img.login{
     filter: brightness(0) saturate(100%) invert(96%) sepia(2%) saturate(3944%) hue-rotate(172deg) brightness(85%) contrast(93%);
 }
+body.dark-mode img.coll-menu{
+    filter: brightness(0) saturate(100%) invert(96%) sepia(2%) saturate(3944%) hue-rotate(172deg) brightness(85%) contrast(93%);
+}
 body.dark-mode img.bg{
     filter: brightness(75%);
 }
@@ -169,6 +172,7 @@ img.coll-menu{
     left: 90%;
     top: 35px;
     z-index: 10;
+    filter: brightness(0) saturate(100%) invert(24%) sepia(49%) saturate(798%) hue-rotate(163deg) brightness(95%) contrast(91%);
     cursor: pointer;
 }
 
@@ -459,21 +463,27 @@ p.recommended{
         }
     img.coll-menu{
         display: block;
-        left: 80%;
+        top: 44px;
+        left: 74.5%;
     }
     img.login{
-        left: 80%;
+        left: 83%;
+        top: 10px
     }
     img.search-lense{
         position: fixed;
-        left: 100%;
-        top: -10px;
+        left: 101%;
+        top: -7px;
     }
     .search-box{
-        left: 25%;
+        left: 22%;
         top: 70px;
         transform: translateY(-50%);
-        width: 35%;
+        width: 40%;
+        height: ;
+    }
+    input.search-bar{
+        height: 40px;
     }
     .home-wrap{
         transform: translateX(50%);
