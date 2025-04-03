@@ -15,6 +15,7 @@ body{
     --content-text: black;
     --title-color: black;
     --main-content-background: #667966;
+    --top-bar-color: #bc4139;
     background-color: var(--standard-page-background);
 }
 
@@ -26,6 +27,7 @@ body.dark-mode{
         --standard-page-background: #1c282f;
         --title-color: white;
         --main-content-background: #796679;
+        --top-bar-color: #814342;
 }
 body.dark-mode img.search-lense{
     filter: brightness(0) saturate(100%) invert(96%) sepia(2%) saturate(3944%) hue-rotate(172deg) brightness(85%) contrast(93%);
@@ -33,7 +35,7 @@ body.dark-mode img.search-lense{
 body.dark-mode img.login{
     filter: brightness(0) saturate(100%) invert(96%) sepia(2%) saturate(3944%) hue-rotate(172deg) brightness(85%) contrast(93%);
 }
-body.dark-mode img.coll-menu{
+body.dark-mode .dropdown button img{
     filter: brightness(0) saturate(100%) invert(96%) sepia(2%) saturate(3944%) hue-rotate(172deg) brightness(85%) contrast(93%);
 }
 body.dark-mode img.bg{
@@ -147,11 +149,11 @@ a{
 /* Top */
 
 .undertop{
-    display: block;
+    display: none;
     position: fixed;
     left: 0px;
     top: 0px;
-    background-color: var(--standard-page-background);
+    background-color: var(--top-bar-color);
     width: 100%;
     height: 140px;
     z-index: 10;
@@ -176,17 +178,6 @@ a.top{
     color: var(--top-text-color);
 }
 
-img.coll-menu{
-    display: none;
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    left: 90%;
-    top: 35px;
-    z-index: 10;
-    filter: brightness(0) saturate(100%) invert(24%) sepia(49%) saturate(798%) hue-rotate(163deg) brightness(95%) contrast(91%);
-    cursor: pointer;
-}
 
 img.logo{
     position: fixed;
@@ -462,12 +453,15 @@ p.recommended{
 /* Responsiveness */
 
 @media only screen and (max-width: 600px){
+    body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
     .wrapper{
         display: block;
     }
     .undertop{
         display: block;
-        background-color: var(--standard-page-background);
         width: 100%;
     }
     img.bg{
@@ -479,13 +473,14 @@ p.recommended{
         left: 70px;
         top: 70px;
         }
-    img.coll-menu{
+    .dropdown button{
         display: block;
         top: 44px;
         left: 84%;
     }
     img.login{
-        display: none;
+        left: 78%;
+        top: 20px;
     }
     img.search-lense{
         display: none;
@@ -514,7 +509,8 @@ p.recommended{
     .home-title p{
         font-size: 10rem;
         left: 50%;
-        transform: translate(-50%, -8%);
+        transform: translateX(-50%);
+        font-size: 9rem;
         height: 240px;
     }
     p.top{
@@ -526,6 +522,7 @@ p.recommended{
         margin: 0px;
         width: 96%;
         top: 480px;
+        max-width: 500px;
     }
     .home-bg{
         width: 180px;
@@ -541,6 +538,13 @@ p.recommended{
         font-weight: normal;
         font-size: 3.7rem;
     }
+    .home-bg:hover{
+        align-items: normal;
+    }
+    .home-arg:hover{
+        width: 170px;
+        height: 110px;
+    }
 }
 
 @media (min-width: 601px){
@@ -554,8 +558,6 @@ p.recommended{
 
 }
 @media (min-width: 1200px){
-    .undertop{
-        display: none;
-    }
+    
 }
 
