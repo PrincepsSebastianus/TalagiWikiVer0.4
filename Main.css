@@ -467,7 +467,7 @@ p.recommended{
     }
     .undertop{
         display: block;
-        background-color: #bc4139;
+        background-color: var(--standard-page-background);
         width: 100%;
     }
     img.bg{
@@ -492,8 +492,7 @@ p.recommended{
     }
     .search-box{
         left: 33%;
-        top: 70px;
-        transform: translateY(-50%);
+        top: 40px;
         width: 44%;
     }
     input.search-bar{
@@ -505,7 +504,7 @@ p.recommended{
         left: 50%;
         transform: translate(-50%, 0%);
         margin: 0px;
-        top: 20%;
+        top: 160px;
         padding: 14px;
     }
     .home-title{
@@ -522,7 +521,25 @@ p.recommended{
         display: none;
     }
     .home-wrap{
-        display: none;
+        display: block;
+        left: auto;
+        margin: 0px;
+        width: 100%;
+        top: 480px;
+    }
+    .home-bg{
+        width: 180px;
+        height: 120px;
+        margin: 0px;
+    }
+    .home-arg{
+        width: 180px;
+        height: 120px;
+    }
+    .home-arg p{
+        padding: 5px;
+        font-weight: normal;
+        font-size: 3.7rem;
     }
 }
 
