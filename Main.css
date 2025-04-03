@@ -16,6 +16,7 @@ body{
     --title-color: black;
     --main-content-background: #667966;
     --top-bar-color: #bc4139;
+    font-family: 'Calibri';
     background-color: var(--standard-page-background);
 }
 
@@ -24,7 +25,7 @@ body.dark-mode{
         --top-text-color: #bbccd3;
         --standard-bgcolor: #bbccd3;
         --standard-button-color: #1b4f76;
-        --standard-page-background: #1c282f;
+        --standard-page-background: #212029;
         --title-color: white;
         --main-content-background: #796679;
         --top-bar-color: #814342;
@@ -39,7 +40,7 @@ body.dark-mode .dropdown button img{
     filter: brightness(0) saturate(100%) invert(96%) sepia(2%) saturate(3944%) hue-rotate(172deg) brightness(85%) contrast(93%);
 }
 body.dark-mode img.bg{
-    filter: brightness(75%);
+    filter: brightness(0) saturate(100%) invert(26%) sepia(8%) saturate(4289%) hue-rotate(314deg) brightness(97%) contrast(75%);
 }
 
 
@@ -51,7 +52,7 @@ a{
 
 .wrapper{
     width: 100%;
-    font-family: 'calibri';
+    font-family: 'Calibri';
 }
 
 /* Main Buttons */
