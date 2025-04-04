@@ -1,0 +1,13 @@
+[
+    { "name": "Arts", "link": "arts.html" },
+    { "name": "Bestiario", "link": "bestiario.html" },
+    { "name": "Casate", "link": "casate.html" },
+    { "name": "Geografia", "link": "geografia.html" },
+    { "name": "Home", "link": "Homepage.html" },
+    { "name": "Magia", "link": "magia.html" },
+    { "name": "Mappe", "link": "mappe.html" },
+    { "name": "Razze", "link": "razze.html" },
+    { "name": "Regni", "link": "regni.html" },
+    { "name": "Religione", "link": "religione.html" },
+    { "name": "Storia", "link": "Page.html" }
+]
