@@ -1,22 +1,25 @@
-let darkMode;
+let darkMode = localStorage.getItem("darkMode");
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    darkMode = true;
-}
-else{darkMode = false};
-
-if(!darkMode){
-  document.getElementById('darkModeSwitch').checked = true;
+if (darkMode === null) {
+  darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+} else {
+  darkMode = darkMode === "true";
 }
 
-
-if(darkMode){
+if (darkMode) {
   document.body.classList.add("dark-mode");
+  document.getElementById("darkModeSwitch").checked = false;
+} else {
+  document.body.classList.remove("dark-mode");
+  document.getElementById("darkModeSwitch").checked = true;
 }
 
-document.getElementById("darkModeSwitch").addEventListener("change", function(e) {
-  document.body.classList.toggle("dark-mode");
-  e.preventDefault();
-})
-
-console.log(darkMode);
+document.getElementById("darkModeSwitch").addEventListener("change", function (e) {
+  darkMode = !e.target.checked;
+  if (darkMode) {
+    document.body.classList.add("dark-mode");
+  } else {
+    document.body.classList.remove("dark-mode");
+  }
+  localStorage.setItem("darkMode", darkMode);
+});

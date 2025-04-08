@@ -1,13 +1,13 @@
 [
-    { "name": "Arts", "link": "arts.html" },
-    { "name": "Bestiario", "link": "bestiario.html" },
-    { "name": "Casate", "link": "casate.html" },
-    { "name": "Geografia", "link": "geografia.html" },
+    { "name": "Arts", "link": "Arts.html" },
+    { "name": "Bestiario", "link": "Bestiario.html" },
+    { "name": "Casate", "link": "Casate.html" },
+    { "name": "Geografia", "link": "Geografia.html" },
     { "name": "Home", "link": "Homepage.html" },
-    { "name": "Magia", "link": "magia.html" },
-    { "name": "Mappe", "link": "mappe.html" },
-    { "name": "Razze", "link": "razze.html" },
-    { "name": "Regni", "link": "regni.html" },
-    { "name": "Religione", "link": "religione.html" },
-    { "name": "Storia", "link": "Page.html" }
+    { "name": "Textus", "link": "Textus.html" },
+    { "name": "Mappe", "link": "Mappe.html" },
+    { "name": "Razze", "link": "Razze.html" },
+    { "name": "Regni", "link": "Regni.html" },
+    { "name": "Religione", "link": "Religione.html" },
+    { "name": "Storia", "link": "Storia.html" }
 ]
