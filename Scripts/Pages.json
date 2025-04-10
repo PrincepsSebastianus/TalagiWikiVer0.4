@@ -1,13 +1,19 @@
 [
     { "name": "Arts", "link": "Arts.html" },
+    { "name": "Bastion de Fuego", "link": "BasDeFuego.html"},
     { "name": "Bestiario", "link": "Bestiario.html" },
+    { "name": "Carenictii", "link": "Carenictii.html" },
     { "name": "Casate", "link": "Casate.html" },
     { "name": "Geografia", "link": "Geografia.html" },
     { "name": "Home", "link": "Homepage.html" },
     { "name": "Textus", "link": "Textus.html" },
     { "name": "Mappe", "link": "Mappe.html" },
+    { "name": "Moera", "link": "Moera.html"},
+    { "name": "Mossbound Golem", "link": "MGolem.html"},
     { "name": "Razze", "link": "Razze.html" },
     { "name": "Regni", "link": "Regni.html" },
     { "name": "Religione", "link": "Religione.html" },
-    { "name": "Storia", "link": "Storia.html" }
+    { "name": "Spiriti e Demoni", "link": "Spiriti.html" },
+    { "name": "Storia", "link": "Storia.html" },
+    { "name": "Tychera", "link": "Tychera.html" }
 ]
