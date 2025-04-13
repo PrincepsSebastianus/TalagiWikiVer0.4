@@ -1,4 +1,5 @@
 [
+    { "name": "Arantiris", "link": "Arantiris.html" },
     { "name": "Arts", "link": "Arts.html" },
     { "name": "Bastion de Fuego", "link": "BasDeFuego.html"},
     { "name": "Bestiario", "link": "Bestiario.html" },
@@ -8,6 +9,7 @@
     { "name": "Home", "link": "Homepage.html" },
     { "name": "Textus", "link": "Textus.html" },
     { "name": "Mappe", "link": "Mappe.html" },
+    { "name": "Mappa Yaranie", "link": "Y-Amministrazione.html" },
     { "name": "Moera", "link": "Moera.html"},
     { "name": "Mossbound Golem", "link": "MGolem.html"},
     { "name": "Razze", "link": "Razze.html" },
@@ -15,5 +17,9 @@
     { "name": "Religione", "link": "Religione.html" },
     { "name": "Spiriti e Demoni", "link": "Spiriti.html" },
     { "name": "Storia", "link": "Storia.html" },
-    { "name": "Tychera", "link": "Tychera.html" }
+    { "name": "Tareldar", "link": "Tareldar.html" },
+    { "name": "Tychera", "link": "Tychera.html" },
+    { "name": "Yaranie", "link": "Yaranie.html" },
+    { "name": "Governo di Yaranie", "link": "Y-Gov.html" },
+    { "name": "Situazione politica di Yaranie", "link": "Y-Situazione.html" }
 ]

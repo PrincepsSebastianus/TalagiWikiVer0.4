@@ -1143,7 +1143,8 @@ p.recommended{
         font-size: 1.2rem;
     }
     .side-contentBgMap1{
-        left: 310px;
+        left: 290px;
+        width: 26vw;
     }
 }
 
