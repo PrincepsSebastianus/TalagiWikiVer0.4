@@ -507,6 +507,40 @@ img.login{
     overflow-y: scroll;
 }
 
+.login-contentBg{
+    background-color: var(--standard-bgcolor);
+    position: fixed;
+	left: 50vw;
+	top: 20vh;
+	transform: translateX(-50%);
+    width: 35vw;
+    height: 75vh;
+	margin: 6px 20px 6px 20px;
+	padding: 8px;
+    border-radius: 40px;
+    color: black;
+    align-items: center;
+    text-align: center;
+    z-index: 8;
+}
+.login-content{
+    background-color: var(--standard-button-color);
+    position: fixed;
+    width: 35vw;
+    height: 75vh;
+    border-radius: 40px;
+    color: black;
+    z-index: 10;
+}
+p.welcome{
+	position: relative;
+	top: -1vh;
+	font-size: 4rem;
+	font-weight: bold;
+	color: var(--title-color);
+}
+
+
 
 p.title{
     position: fixed;
@@ -1148,3 +1182,90 @@ p.recommended{
     }
 }
 
+
+
+
+
+
+
+/* From Uiverse.io by mrhyddenn */ 
+.login-wrap {
+	position: fixed;
+	display: flex-wrap;
+	z-index: 12;
+	width: 35vw;
+	background-color: none;
+	top: 20vh;
+	align-content: center;
+}
+
+.form__group {
+  position: relative;
+  display: flex;
+  left: 0vw;
+  padding: 20px 0 0;
+  width: 100%;
+  max-width: 20vw;
+  z-index: 12;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 140%;
+  border: none;
+  border-bottom: 3px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.5rem;
+  color: var(--title-color);
+  padding: 14px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.5rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1.5rem;
+  color: #9b9b9b;
+  pointer-events: none;
+}
+
+.form__label:focus {
+	color: var(--top-bar-color);
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, var(--top-bar-color), var(--top-bar-color));
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 2rem;
+  color: var(--top-bar-color);
+  -webkit-text-stroke: 0.01px white;
+  font-weight: 700;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
