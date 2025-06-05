@@ -2,29 +2,19 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Regni | TalagiWiki</title>
+        <title>Dati Server | TalagiWiki</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="Img/Icons/Logo.png">
 		<link rel="stylesheet" type="text/css" href="Main.css"></link>
         <link rel="stylesheet" type="text/css" href="DarkModeButton.css"></link>
     </head>
-    <body>  
+<body>  
         <div class="wrapper">
             <img class="bg" src="Img/bg.png"></img>
             <div class="undertop"></div>
-            <a href="index.html"><img class="logo" src="Img/Icons/Logo.png"></img></a>
-            <div class="alert-boxBgBg" id="alertBox"><div class="alert-boxBg">
-                <div class="alert-box">
-                    <p>Accetta i nostri Cookies per accedere alla wiki, essi saranno utilizzati 
-                        al solo scopo statistico dal team di sviluppo per migliorare il sito. Clicca <a href="Cookie.php" class="link" style="color: var(--standard-bgcolor);">qui</a>
-                         per visualizzare i dati del server.
-                    </p>
-                    <button id="confirmButton">
-                        Accetta
-                    </button>
-                </div>
-            </div></div>
-            <p class="top"><a href="index.html" class="top">&nbspHOME&nbsp</a></p>
+            <a href="Homepage.html"><img class="logo" src="Img/Icons/Logo.png"></img></a>
+
+            <p class="top"><a href="Homepage.html" class="top">&nbspHOME&nbsp</a></p>
             <p class="top"><a href="Mappe.html" class="top">&nbspMAPPE&nbsp</a></p>
             <p class="top"><a href="Arts.html" class="top">&nbspARTS&nbsp</a></p>
 
@@ -39,13 +29,29 @@
             </div>
 
             <a href="login.html"><img class="login" src="Img/Icons/Profile.png"><img></a>
-
-            <div class="flex-wrap">
-                <div class="item-bg"><a href="Moera.html"><img src="Img/Banners/Moera.png"></a><p>Moera</p></div>
-                <div class="item-bg"><a href="Tychera.html"><img src="Img/Banners/Tychera.png"></a><p>Tychera</p></div>
-                <div class="item-bg"><a href="Yaranie.html"><img src="Img/Banners/Minassaule.png"></a><p>Yáranie</p></div>
-            </div>
-
+			
+			<div class="login-contentBg">
+				<div class="login-content">
+					<p class="welcome" style="
+                    font-size: 1.2rem;
+                    text-align: left;
+                    padding: 30px;
+                    color: white;
+                    height: 20px;
+                    ">
+                    Informazioni sul server:<bsssr><br>
+                    Posizione: <?php echo $_SERVER['PHP_SELF'];?><br>
+                    Nome del server: <?php echo $_SERVER['HTTP_HOST'];?><br>
+                    Sistema operativo e Browser: <?php echo $_SERVER['HTTP_USER_AGENT'];?><br>
+                    Porta del server: <?php echo $_SERVER['SERVER_PORT'];?><br>
+                    Protocollo di trasmissione: <?php echo $_SERVER['SERVER_PROTOCOL'];?><br>
+                    Momento della richiesta: <?php echo $_SERVER['REQUEST_TIME'];?><br>
+                    Lingue accettate: <?php echo $_SERVER['HTTP_ACCEPT_LANGUAGE'];?><br>
+                    </p>
+				</div>
+				
+			</div>
+            
             <div class="toggle-switch">
                 <label class="switch-label">
                     <input type="checkbox" class="checkbox" id="darkModeSwitch">
@@ -53,9 +59,12 @@
                 </label>
             </div> 
             </div>
+            
             <script src="Scripts/Autocomplete.js"></script>
             <script src="Scripts/Darkmode.js"></script>
-            <script src="Scripts/CookieAlert.js"></script>  
+            <script src="Scripts/ImageScroll.js" data-scroll-thresholds="0"></script>
         </div>
-    </body>
+    
+</p>
+</body>
 </html>

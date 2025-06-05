@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Regni | TalagiWiki</title>
+        <title>TalagiWiki</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="Img/Icons/Logo.png">
 		<link rel="stylesheet" type="text/css" href="Main.css"></link>
@@ -10,9 +10,10 @@
     </head>
     <body>  
         <div class="wrapper">
-            <img class="bg" src="Img/bg.png"></img>
+            <img class="bg" src="Img/bg.png" id="backgroundImage"></img>
             <div class="undertop"></div>
-            <a href="index.html"><img class="logo" src="Img/Icons/Logo.png"></img></a>
+            <img class="logo" src="Img/Icons/Logo.png"></img>
+
             <div class="alert-boxBgBg" id="alertBox"><div class="alert-boxBg">
                 <div class="alert-box">
                     <p>Accetta i nostri Cookies per accedere alla wiki, essi saranno utilizzati 
@@ -24,7 +25,9 @@
                     </button>
                 </div>
             </div></div>
-            <p class="top"><a href="index.html" class="top">&nbspHOME&nbsp</a></p>
+
+
+            <p class="top"><u>&nbspHOME&nbsp</u></p>
             <p class="top"><a href="Mappe.html" class="top">&nbspMAPPE&nbsp</a></p>
             <p class="top"><a href="Arts.html" class="top">&nbspARTS&nbsp</a></p>
 
@@ -35,15 +38,22 @@
                 <div class="result-box">
                    
                 </div>
-                <img class="search-lense" src="Img/Icons/Search.svg"></img>
+                <a src="Search.html" src="Img/Icons/Search.svg"><img class="search-lense"></img></a>
             </div>
-
+            <img class="search-lense" src="Img/Icons/Search.svg"></img>
             <a href="login.html"><img class="login" src="Img/Icons/Profile.png"><img></a>
 
-            <div class="flex-wrap">
-                <div class="item-bg"><a href="Moera.html"><img src="Img/Banners/Moera.png"></a><p>Moera</p></div>
-                <div class="item-bg"><a href="Tychera.html"><img src="Img/Banners/Tychera.png"></a><p>Tychera</p></div>
-                <div class="item-bg"><a href="Yaranie.html"><img src="Img/Banners/Minassaule.png"></a><p>Yáranie</p></div>
+            <div class="home-mainBg"><div class="home-title"><p>TALAGI<h7>WIKI</h7></p></div></div>
+
+            <div class="home-wrap">
+                <a href="Regni.html"><div class="home-bg"><div class="home-arg"><p>REGNI</p></div></div></a>
+                <a href="Casate.html"><div class="home-bg"><div class="home-arg"><p>CASATE</p></div></div></a>
+                <a href="Storia.html"><div class="home-bg"><div class="home-arg"><p>STORIA</p></div></div></a>
+                <a href="Bestiario.html"><div class="home-bg"><div class="home-arg"><p>BESTIARIO</p></div></div></a>
+                <a href="Geografia.html"><div class="home-bg"><div class="home-arg"><p>GEOGRAFIA</p></div></div></a>
+                <a href="Religione.html"><div class="home-bg"><div class="home-arg"><p>RELIGIONE</p></div></div></a>
+                <a href="Textus.html"><div class="home-bg"><div class="home-arg"><p>TEXTUS</p></div></div></a>
+                <a href="Razze.html"><div class="home-bg"><div class="home-arg"><p>RAZZE</p></div></div></a>
             </div>
 
             <div class="toggle-switch">
@@ -52,10 +62,9 @@
                     <span class="slider"></span>
                 </label>
             </div> 
-            </div>
-            <script src="Scripts/Autocomplete.js"></script>
-            <script src="Scripts/Darkmode.js"></script>
-            <script src="Scripts/CookieAlert.js"></script>  
         </div>
+        <script src="Scripts/Autocomplete.js"></script>
+        <script src="Scripts/CookieAlert.js"></script>
+        <script src="Scripts/Darkmode.js"></script>
     </body>
 </html>

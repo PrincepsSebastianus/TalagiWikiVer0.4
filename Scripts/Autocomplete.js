@@ -1,13 +1,18 @@
 let availableKeywords = [];
 let keywordLinks = [];
 
+// Accent removal
+function removeAccents(str) {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
 fetch("Scripts/Pages.json")
     .then(response => response.json())
     .then(function(data) {
-        // Populate availableKeywords and keywordLinks
+        // Take availableKeywords and keywordLinks from thr json
         data.forEach(item => {
             availableKeywords.push(item.name); // Add page names to availableKeywords
-            keywordLinks.push(item); // Store the entire object (name and link)
+            keywordLinks.push(item); // Store the entire object (name + link)
         });
         console.log("Available Keywords:", availableKeywords);
         console.log("Keyword Links:", keywordLinks);
@@ -19,10 +24,10 @@ const inputBox = document.getElementById("input-box");
 
 inputBox.onkeyup = function () {
     let result = [];
-    let input = inputBox.value;
+    let input = removeAccents(inputBox.value);
     if (input.length) {
         result = keywordLinks.filter((item) => {
-            return item.name.toLowerCase().includes(input.toLowerCase());
+            return removeAccents(item.name).toLowerCase().includes(input.toLowerCase());
         });
         console.log("Filtered Results:", result);
     }
@@ -46,6 +51,6 @@ function display(result) {
 
 function redirectToPage(link) {
     if (link) {
-        window.location.href = link; // Use the link directly
+        window.location.href = link;
     }
 }
